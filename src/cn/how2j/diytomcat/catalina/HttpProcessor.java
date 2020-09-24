@@ -8,6 +8,7 @@ import cn.how2j.diytomcat.webappServlet.HelloServlet;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.ArrayUtil;
+import cn.hutool.core.util.ReflectUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.LogFactory;
 
@@ -24,38 +25,41 @@ public class HttpProcessor {
             String uri = request.getUri();
             if (null == uri)
                 return;
-            System.out.println(uri);
-
-            //处理500
-            if ("/500.html".equals(uri)) {
-                throw new RuntimeException("this is a exception");
+            LogFactory.get().error("uri is              "+ uri);
+            Context context = request.getContext();
+            String servletClassName = context.getServletClassName(uri);
+            if(servletClassName != null){
+                LogFactory.get().error("servletClassName is : " + servletClassName);
+                Object servlet = ReflectUtil.newInstance(servletClassName);
+                ReflectUtil.invoke(servlet, "doGet", request, response);
             }
-
-            if("/hello".equals(uri)){
-                HelloServlet helloServlet = new HelloServlet();
-                helloServlet.doGet(request, response);
-            }else {
-                if ("/".equals(uri)) {
-                    uri = WebXMLUtil.getWelcomeFile(request.getContext());
+            else {
+                //处理500
+                if ("/500.html".equals(uri)) {
+                    throw new RuntimeException("this is a exception");
                 }
-                String fileName = StrUtil.removePrefix(uri, "/");
-                Context context = request.getContext();
-                File file = FileUtil.file(context.getDocBase(), fileName);
-                if (file.exists()) {
-                    String extName = FileUtil.extName(file);
-                    String mime = WebXMLUtil.getMimeType(extName);
-                    response.setContextType(mime);
-                    LogFactory.get().info("response type is : " + response.getContextType());
-
-                    byte[] fileContent = FileUtil.readBytes(file);
-                    response.setBody(fileContent);
-                    if (fileName.equals("timeConsume.html")) {
-                        ThreadUtil.sleep(1000);
+                else {
+                    if ("/".equals(uri)) {
+                        uri = WebXMLUtil.getWelcomeFile(request.getContext());
                     }
-                } else {
-                    LogFactory.get().error("404 not found");
-                    handle404(s, uri);
-                    return;
+                    String fileName = StrUtil.removePrefix(uri, "/");
+                    File file = FileUtil.file(context.getDocBase(), fileName);
+                    if (file.exists()) {
+                        String extName = FileUtil.extName(file);
+                        String mime = WebXMLUtil.getMimeType(extName);
+                        response.setContextType(mime);
+                        LogFactory.get().info("response type is : " + response.getContextType());
+
+                        byte[] fileContent = FileUtil.readBytes(file);
+                        response.setBody(fileContent);
+                        if (fileName.equals("timeConsume.html")) {
+                            ThreadUtil.sleep(1000);
+                        }
+                    } else {
+                        LogFactory.get().error("404 not found");
+                        handle404(s, uri);
+                        return;
+                    }
                 }
             }
             //处理200

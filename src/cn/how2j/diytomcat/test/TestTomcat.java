@@ -128,4 +128,10 @@ public class TestTomcat {
 		Assert.assertEquals("Hello DIY Tomcat from HelloServlet", txt);
 
 	}
+
+	@Test
+	public void testhello() {
+		String html = getContentString("/j2ee/hello");
+		Assert.assertEquals(html,"Hello DIY Tomcat from HelloServlet");
+	}
 }

@@ -6,9 +6,10 @@
     <Connector port="18082"/>
     <Engine defaultHost="localhost">
       <Host name="localhost">
-        <Context path="/b" docBase="E:/projects/tomcat/How2jTomcat/webapps/b"/>
-        <Context path="/a" docBase="E:/projects/tomcat/How2jTomcat/webapps/a"/>
-        <Context path="/" docBase="E:/projects/tomcat/How2jTomcat/webapps/ROOT"/>
+        <Context path="/b" docBase="D:/OneDrive/laptop-D/projects/tomcat/DIYTomcat/webapps/b"/>
+        <Context path="/a" docBase="D:/OneDrive/laptop-D/projects/tomcat/DIYTomcat/webapps/a"/>
+        <Context path="/" docBase="D:/OneDrive/laptop-D/projects/tomcat/DIYTomcat/webapps/ROOT"/>
+        <Context path="/j2ee" docBase="D:/OneDrive/laptop-D/projects/tomcat/DIYTomcat/webapps/j2ee"/>
       </Host>
     </Engine>
   </Service>

@@ -179,3 +179,149 @@
 [INFO ] 2020-09-24 16:30:07,479 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
 [INFO ] 2020-09-24 16:30:07,479 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
 [INFO ] 2020-09-24 16:30:07,479 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 20:47:23,854 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:36): Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 20:47:23,870 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:37): Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 5 ms 
+[INFO ] 2020-09-24 20:47:24,302 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:36): Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 20:47:24,302 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:37): Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms 
+[INFO ] 2020-09-24 20:47:24,305 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:36): Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 20:47:24,305 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:37): Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ROOT has finished in 0 ms 
+[INFO ] 2020-09-24 20:47:24,308 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 20:47:24,308 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 20:47:24,308 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 20:50:55,780 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:36): Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 20:50:55,800 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:37): Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 4 ms 
+[INFO ] 2020-09-24 20:50:56,243 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:36): Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 20:50:56,243 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:37): Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms 
+[INFO ] 2020-09-24 20:50:56,246 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:36): Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 20:50:56,246 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:37): Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ROOT has finished in 0 ms 
+[INFO ] 2020-09-24 20:50:56,249 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 20:50:56,249 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 20:50:56,250 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 20:56:39,613 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:36): Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 20:56:39,631 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:37): Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 5 ms 
+[INFO ] 2020-09-24 20:56:40,073 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:36): Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 20:56:40,073 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:37): Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms 
+[INFO ] 2020-09-24 20:56:40,076 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:36): Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 20:56:40,076 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:37): Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ROOT has finished in 0 ms 
+[INFO ] 2020-09-24 20:56:40,079 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 20:56:40,079 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 20:56:40,079 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 20:58:33,168 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:36): Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 20:58:33,191 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:37): Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 5 ms 
+[INFO ] 2020-09-24 20:58:33,631 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:36): Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 20:58:33,631 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:37): Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms 
+[INFO ] 2020-09-24 20:58:33,634 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:36): Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 20:58:33,634 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:37): Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ROOT has finished in 0 ms 
+[INFO ] 2020-09-24 20:58:33,638 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 20:58:33,638 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 20:58:33,638 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:03:14,523 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:36): Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:03:14,545 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:37): Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 6 ms 
+[INFO ] 2020-09-24 21:03:15,124 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:36): Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:03:15,124 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:37): Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms 
+[INFO ] 2020-09-24 21:03:15,128 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:36): Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:03:15,128 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:37): Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ROOT has finished in 0 ms 
+[INFO ] 2020-09-24 21:03:15,132 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:03:15,133 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:03:15,133 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:03:36,609 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:36): Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:03:36,624 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:37): Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 4 ms 
+[INFO ] 2020-09-24 21:03:37,107 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:36): Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:03:37,107 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:37): Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms 
+[INFO ] 2020-09-24 21:03:37,111 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:36): Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:03:37,111 [main] cn.how2j.diytomcat.catalina.Context.<init>(Context.java:37): Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ROOT has finished in 0 ms 
+[INFO ] 2020-09-24 21:03:37,115 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:03:37,116 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:03:37,116 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:05:08,930 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:05:08,932 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:05:08,933 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:06:12,564 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:06:12,567 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:06:12,568 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:09:08,668 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:09:08,671 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:09:08,672 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:11:42,144 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:11:42,146 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:11:42,147 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:22:21,582 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:22:21,585 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:22:21,585 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:30:02,698 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:30:02,701 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:30:02,701 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:32:16,025 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:32:16,027 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:32:16,028 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:32:52,036 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:32:52,037 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:32:52,038 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:34:12,083 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:34:12,086 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:34:12,086 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:35:49,974 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:35:49,976 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:35:49,976 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:37:47,655 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:37:47,657 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:37:47,657 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:40:05,213 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:40:05,215 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:40:05,215 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:43:17,384 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:43:17,386 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:43:17,387 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:43:17,387 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/j2ee has docPath:E:/projects/tomcat/How2jTomcat/webapps/j2ee 
+[INFO ] 2020-09-24 21:45:41,635 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:45:41,639 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:45:41,640 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:45:41,640 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/j2ee has docPath:E:/projects/tomcat/How2jTomcat/webapps/j2ee 
+[INFO ] 2020-09-24 21:46:09,963 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:46:09,965 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:46:09,965 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:46:09,966 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/j2ee has docPath:E:/projects/tomcat/How2jTomcat/webapps/j2ee 
+[INFO ] 2020-09-24 21:46:38,497 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:46:38,499 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:46:38,500 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:46:38,500 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/j2ee has docPath:E:/projects/tomcat/How2jTomcat/webapps/j2ee 
+[INFO ] 2020-09-24 21:48:41,471 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:48:41,473 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:48:41,474 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:48:41,474 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/j2ee has docPath:E:/projects/tomcat/How2jTomcat/webapps/j2ee 
+[INFO ] 2020-09-24 21:52:29,328 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:52:29,330 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:52:29,331 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:52:29,331 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/j2ee has docPath:E:/projects/tomcat/How2jTomcat/webapps/j2ee 
+[INFO ] 2020-09-24 21:56:23,499 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:56:23,501 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:56:23,501 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:56:23,501 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/j2ee has docPath:E:/projects/tomcat/How2jTomcat/webapps/j2ee 
+[INFO ] 2020-09-24 21:58:29,057 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 21:58:29,059 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 21:58:29,059 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 21:58:29,060 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/j2ee has docPath:E:/projects/tomcat/How2jTomcat/webapps/j2ee 
+[INFO ] 2020-09-24 22:02:18,734 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 22:02:18,735 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 22:02:18,736 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 22:02:18,736 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/j2ee has docPath:E:/projects/tomcat/How2jTomcat/webapps/j2ee 
+[INFO ] 2020-09-24 22:03:58,115 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 22:03:58,117 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 22:03:58,117 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 22:03:58,117 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/j2ee has docPath:E:/projects/tomcat/How2jTomcat/webapps/j2ee 
+[INFO ] 2020-09-24 22:04:31,879 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 22:04:31,881 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 22:04:31,882 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 22:04:31,882 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/j2ee has docPath:E:/projects/tomcat/How2jTomcat/webapps/j2ee 
+[INFO ] 2020-09-24 22:08:23,807 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 22:08:23,809 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 22:08:23,809 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 22:08:23,809 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/j2ee has docPath:E:/projects/tomcat/How2jTomcat/webapps/j2ee 
+[INFO ] 2020-09-24 22:09:10,470 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b 
+[INFO ] 2020-09-24 22:09:10,472 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a 
+[INFO ] 2020-09-24 22:09:10,473 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 22:09:10,473 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/j2ee has docPath:E:/projects/tomcat/How2jTomcat/webapps/j2ee 
+[INFO ] 2020-09-24 22:33:59,676 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:D:/OneDrive/laptop-D/projects/tomcat/DIYTomcat/webapps/b 
+[INFO ] 2020-09-24 22:33:59,677 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:D:/OneDrive/laptop-D/projects/tomcat/DIYTomcat/webapps/a 
+[INFO ] 2020-09-24 22:33:59,678 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:D:/OneDrive/laptop-D/projects/tomcat/DIYTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 22:33:59,678 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/j2ee has docPath:D:/OneDrive/laptop-D/projects/tomcat/DIYTomcat/webapps/j2ee 
