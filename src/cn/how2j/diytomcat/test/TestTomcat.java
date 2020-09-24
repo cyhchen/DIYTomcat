@@ -121,4 +121,11 @@ public class TestTomcat {
 		int expectlength = 3590775;
 		Assert.assertEquals(expectlength, length);
 	}
+
+	@Test
+	public void testHello(){
+		String txt = getContentString("/hello");
+		Assert.assertEquals("Hello DIY Tomcat from HelloServlet", txt);
+
+	}
 }
