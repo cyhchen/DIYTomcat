@@ -1,0 +1,18 @@
+09 21, 2020 21:09:12 下午 cn.how2j.diytomcat.Bootstrap main
+ERROR: 错误
+09 21, 2020 21:09:21 下午 cn.how2j.diytomcat.Bootstrap main
+ERROR: 错误
+09 21, 2020 21:09:36 下午 cn.how2j.diytomcat.Bootstrap main
+ERROR: 错误
+09 21, 2020 21:30:32 下午 cn.how2j.diytomcat.Bootstrap main
+ERROR: 错误
+09 21, 2020 21:45:01 下午 cn.how2j.diytomcat.Bootstrap main
+ERROR: 错误
+09 21, 2020 23:19:18 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\a
+09 21, 2020 23:19:18 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\a has finished in 2 ms
+09 21, 2020 23:19:18 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\ROOT
+09 21, 2020 23:19:18 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\ROOT has finished in 1 ms

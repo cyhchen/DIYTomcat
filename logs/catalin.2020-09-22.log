@@ -1,0 +1,320 @@
+09 22, 2020 09:42:17 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\a
+09 22, 2020 09:42:17 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\a has finished in 3 ms
+09 22, 2020 09:42:17 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\b
+09 22, 2020 09:42:17 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\b has finished in 0 ms
+09 22, 2020 09:42:17 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\ROOT
+09 22, 2020 09:42:17 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\ROOT has finished in 5 ms
+09 22, 2020 10:39:21 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\a
+09 22, 2020 10:39:21 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\a has finished in 3 ms
+09 22, 2020 10:39:21 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\b
+09 22, 2020 10:39:21 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\b has finished in 2 ms
+09 22, 2020 10:39:21 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\ROOT
+09 22, 2020 10:39:21 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\ROOT has finished in 0 ms
+09 22, 2020 10:41:27 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\a
+09 22, 2020 10:41:27 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\a has finished in 3 ms
+09 22, 2020 10:41:27 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\b
+09 22, 2020 10:41:27 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\b has finished in 2 ms
+09 22, 2020 10:41:27 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\ROOT
+09 22, 2020 10:41:27 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\ROOT has finished in 0 ms
+09 22, 2020 10:42:00 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\a
+09 22, 2020 10:42:00 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\a has finished in 3 ms
+09 22, 2020 10:42:00 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\b
+09 22, 2020 10:42:00 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\b has finished in 2 ms
+09 22, 2020 10:42:00 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\ROOT
+09 22, 2020 10:42:00 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\ROOT has finished in 0 ms
+09 22, 2020 10:45:41 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\a
+09 22, 2020 10:45:41 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\a has finished in 3 ms
+09 22, 2020 10:45:41 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\b
+09 22, 2020 10:45:41 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\b has finished in 1 ms
+09 22, 2020 10:45:41 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\ROOT
+09 22, 2020 10:45:41 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\ROOT has finished in 0 ms
+09 22, 2020 10:48:35 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\a
+09 22, 2020 10:48:35 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\a has finished in 4 ms
+09 22, 2020 10:48:35 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\b
+09 22, 2020 10:48:35 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\b has finished in 2 ms
+09 22, 2020 10:48:35 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\ROOT
+09 22, 2020 10:48:35 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\ROOT has finished in 0 ms
+09 22, 2020 10:50:23 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\a
+09 22, 2020 10:50:23 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\a has finished in 3 ms
+09 22, 2020 10:50:23 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\b
+09 22, 2020 10:50:23 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\b has finished in 2 ms
+09 22, 2020 10:50:23 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\ROOT
+09 22, 2020 10:50:23 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\ROOT has finished in 0 ms
+09 22, 2020 10:50:39 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\a
+09 22, 2020 10:50:39 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\a has finished in 3 ms
+09 22, 2020 10:50:39 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\b
+09 22, 2020 10:50:39 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\b has finished in 1 ms
+09 22, 2020 10:50:39 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\ROOT
+09 22, 2020 10:50:39 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\ROOT has finished in 1 ms
+09 22, 2020 10:51:48 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\a
+09 22, 2020 10:51:48 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\a has finished in 2 ms
+09 22, 2020 10:51:48 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\b
+09 22, 2020 10:51:48 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\b has finished in 3 ms
+09 22, 2020 10:51:48 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\ROOT
+09 22, 2020 10:51:48 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\ROOT has finished in 0 ms
+09 22, 2020 10:56:01 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\a
+09 22, 2020 10:56:01 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\a has finished in 3 ms
+09 22, 2020 10:56:01 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\b
+09 22, 2020 10:56:01 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\b has finished in 2 ms
+09 22, 2020 10:56:01 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\ROOT
+09 22, 2020 10:56:01 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\ROOT has finished in 1 ms
+09 22, 2020 10:59:17 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\a
+09 22, 2020 10:59:17 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\a has finished in 2 ms
+09 22, 2020 10:59:17 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\b
+09 22, 2020 10:59:17 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\b has finished in 1 ms
+09 22, 2020 10:59:17 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\ROOT
+09 22, 2020 10:59:17 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\ROOT has finished in 0 ms
+09 22, 2020 11:01:23 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\a
+09 22, 2020 11:01:23 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\a has finished in 3 ms
+09 22, 2020 11:01:23 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\b
+09 22, 2020 11:01:23 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\b has finished in 2 ms
+09 22, 2020 11:01:23 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\ROOT
+09 22, 2020 11:01:23 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\ROOT has finished in 0 ms
+09 22, 2020 11:02:45 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\a
+09 22, 2020 11:02:45 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\a has finished in 3 ms
+09 22, 2020 11:02:45 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\b
+09 22, 2020 11:02:45 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\b has finished in 1 ms
+09 22, 2020 11:02:45 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:\projects\tomcat\How2jTomcat\webapps\ROOT
+09 22, 2020 11:02:45 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\projects\tomcat\How2jTomcat\webapps\ROOT has finished in 0 ms
+09 22, 2020 11:02:45 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 22, 2020 11:02:45 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 0 ms
+09 22, 2020 11:41:14 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 22, 2020 11:41:14 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 4 ms
+09 22, 2020 11:42:36 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 22, 2020 11:42:36 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 3 ms
+09 22, 2020 11:48:07 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 22, 2020 11:48:07 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 3 ms
+09 22, 2020 11:49:24 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 22, 2020 11:49:24 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 3 ms
+09 22, 2020 13:46:31 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 22, 2020 13:46:31 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 4 ms
+09 22, 2020 13:50:17 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 22, 2020 13:50:17 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 3 ms
+09 22, 2020 13:50:17 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 22, 2020 13:50:17 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms
+09 22, 2020 13:52:29 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 22, 2020 13:52:29 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 3 ms
+09 22, 2020 13:52:29 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 22, 2020 13:52:29 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms
+09 22, 2020 13:52:29 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/
+09 22, 2020 13:52:29 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ has finished in 1 ms
+09 22, 2020 14:38:22 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 22, 2020 14:38:22 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 3 ms
+09 22, 2020 14:38:22 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 22, 2020 14:38:22 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms
+09 22, 2020 14:38:22 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/
+09 22, 2020 14:38:22 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ has finished in 0 ms
+09 22, 2020 14:53:43 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 22, 2020 14:53:43 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 4 ms
+09 22, 2020 14:53:43 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 22, 2020 14:53:43 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms
+09 22, 2020 14:53:43 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/
+09 22, 2020 14:53:43 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ has finished in 0 ms
+09 22, 2020 14:53:43 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 22, 2020 14:53:43 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 1 ms
+09 22, 2020 14:53:43 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 22, 2020 14:53:43 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms
+09 22, 2020 14:53:43 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/
+09 22, 2020 14:53:43 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ has finished in 0 ms
+09 22, 2020 15:26:22 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 22, 2020 15:26:22 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 3 ms
+09 22, 2020 15:26:22 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 22, 2020 15:26:22 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms
+09 22, 2020 15:26:22 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/
+09 22, 2020 15:26:22 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ has finished in 1 ms
+09 22, 2020 15:26:22 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 22, 2020 15:26:22 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 0 ms
+09 22, 2020 15:26:22 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 22, 2020 15:26:22 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms
+09 22, 2020 15:26:22 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/
+09 22, 2020 15:26:22 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ has finished in 0 ms
+09 22, 2020 15:51:48 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 22, 2020 15:51:48 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 2 ms
+09 22, 2020 15:51:48 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 22, 2020 15:51:48 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 1 ms
+09 22, 2020 15:51:48 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/
+09 22, 2020 15:51:48 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ has finished in 0 ms
+09 22, 2020 15:51:48 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 22, 2020 15:51:48 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 0 ms
+09 22, 2020 15:51:48 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 22, 2020 15:51:48 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 1 ms
+09 22, 2020 15:51:48 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/
+09 22, 2020 15:51:48 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ has finished in 0 ms
+09 22, 2020 15:51:52 下午 cn.how2j.diytomcat.Bootstrap run
+ERROR: java.lang.RuntimeException: this is a exception
+09 22, 2020 15:53:59 下午 cn.how2j.diytomcat.Bootstrap run
+ERROR: java.lang.RuntimeException: this is a exception
+09 22, 2020 15:54:27 下午 cn.how2j.diytomcat.Bootstrap run
+ERROR: java.lang.RuntimeException: this is a exception
+09 22, 2020 15:54:47 下午 cn.how2j.diytomcat.Bootstrap run
+ERROR: java.lang.RuntimeException: this is a exception
+09 22, 2020 16:01:05 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 22, 2020 16:01:05 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 3 ms
+09 22, 2020 16:01:05 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 22, 2020 16:01:05 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms
+09 22, 2020 16:01:05 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/
+09 22, 2020 16:01:05 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ has finished in 1 ms
+09 22, 2020 16:01:05 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 22, 2020 16:01:05 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 1 ms
+09 22, 2020 16:01:05 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 22, 2020 16:01:05 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms
+09 22, 2020 16:01:05 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/
+09 22, 2020 16:01:05 下午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ has finished in 0 ms
+09 22, 2020 16:01:16 下午 cn.how2j.diytomcat.Bootstrap run
+ERROR: java.lang.RuntimeException: this is a exception
+09 22, 2020 16:01:37 下午 cn.how2j.diytomcat.Bootstrap run
+ERROR: java.lang.RuntimeException: this is a exception

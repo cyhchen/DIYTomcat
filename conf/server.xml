@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Server>
+  <Service name="Catalina">
+    <Connector port="18080"/>
+    <Connector port="18081"/>
+    <Connector port="18082"/>
+    <Engine defaultHost="localhost">
+      <Host name="localhost">
+        <Context path="/b" docBase="E:/projects/tomcat/How2jTomcat/webapps/b"/>
+        <Context path="/a" docBase="E:/projects/tomcat/How2jTomcat/webapps/a"/>
+        <Context path="/" docBase="E:/projects/tomcat/How2jTomcat/webapps/ROOT"/>
+      </Host>
+    </Engine>
+  </Service>
+</Server>

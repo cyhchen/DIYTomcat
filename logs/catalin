@@ -1,0 +1,310 @@
+09 24, 2020 10:00:39 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:00:39 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 4 ms
+09 24, 2020 10:00:39 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:00:39 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms
+09 24, 2020 10:00:39 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/
+09 24, 2020 10:00:39 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ has finished in 5 ms
+09 24, 2020 10:00:39 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:00:39 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:00:39 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/
+09 24, 2020 10:00:39 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:00:39 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 1 ms
+09 24, 2020 10:00:39 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:00:39 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms
+09 24, 2020 10:00:39 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/
+09 24, 2020 10:00:39 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ has finished in 0 ms
+09 24, 2020 10:00:39 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:00:39 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:00:39 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/
+09 24, 2020 10:00:42 上午 cn.how2j.diytomcat.http.Request <init>
+ERROR: context has text is :cn.how2j.diytomcat.catalina.Context@7b3f2314
+09 24, 2020 10:01:29 上午 cn.how2j.diytomcat.http.Request <init>
+ERROR: context has text is :cn.how2j.diytomcat.catalina.Context@7b3f2314
+09 24, 2020 10:01:40 上午 cn.how2j.diytomcat.http.Request <init>
+ERROR: context has text is :cn.how2j.diytomcat.catalina.Context@7b3f2314
+09 24, 2020 10:06:07 上午 cn.how2j.diytomcat.http.Request <init>
+ERROR: context has text is :cn.how2j.diytomcat.catalina.Context@7b3f2314
+09 24, 2020 10:06:23 上午 cn.how2j.diytomcat.http.Request <init>
+ERROR: context has text is :cn.how2j.diytomcat.catalina.Context@7b3f2314
+09 24, 2020 10:09:28 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:09:28 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 3 ms
+09 24, 2020 10:09:28 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:09:28 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 1 ms
+09 24, 2020 10:09:28 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/
+09 24, 2020 10:09:28 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ has finished in 0 ms
+09 24, 2020 10:09:28 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:09:28 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:09:28 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/
+09 24, 2020 10:09:28 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:09:28 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 0 ms
+09 24, 2020 10:09:28 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:09:28 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 1 ms
+09 24, 2020 10:09:28 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/
+09 24, 2020 10:09:28 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ has finished in 0 ms
+09 24, 2020 10:09:28 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:09:28 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:09:28 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/
+09 24, 2020 10:09:30 上午 cn.how2j.diytomcat.http.Request <init>
+ERROR: context has text is :cn.how2j.diytomcat.catalina.Context@21b6d449
+09 24, 2020 10:12:44 上午 cn.how2j.diytomcat.http.Request <init>
+ERROR: context has text is :cn.how2j.diytomcat.catalina.Context@21b6d449
+09 24, 2020 10:13:56 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:13:56 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 4 ms
+09 24, 2020 10:13:56 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:13:56 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms
+09 24, 2020 10:13:56 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/
+09 24, 2020 10:13:56 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ has finished in 1 ms
+09 24, 2020 10:13:56 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:13:56 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:13:56 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/
+09 24, 2020 10:13:56 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:13:56 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 1 ms
+09 24, 2020 10:13:56 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:13:56 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms
+09 24, 2020 10:13:56 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/
+09 24, 2020 10:13:56 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ has finished in 0 ms
+09 24, 2020 10:13:56 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:13:56 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:13:56 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/
+09 24, 2020 10:13:59 上午 cn.how2j.diytomcat.http.Request <init>
+ERROR: context has text is :cn.how2j.diytomcat.catalina.Context@63b0b6c2
+09 24, 2020 10:13:59 上午 cn.how2j.diytomcat.Bootstrap run
+ERROR: 404 not found
+09 24, 2020 10:19:30 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:19:30 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 4 ms
+09 24, 2020 10:19:30 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:19:30 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms
+09 24, 2020 10:19:30 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/
+09 24, 2020 10:19:30 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ has finished in 0 ms
+09 24, 2020 10:19:30 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:19:30 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:19:30 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/
+09 24, 2020 10:19:31 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:19:31 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 0 ms
+09 24, 2020 10:19:31 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:19:31 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms
+09 24, 2020 10:19:31 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/
+09 24, 2020 10:19:31 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ has finished in 1 ms
+09 24, 2020 10:19:31 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:19:31 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:19:31 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/
+09 24, 2020 10:19:33 上午 cn.how2j.diytomcat.http.Request <init>
+ERROR: context has text is :cn.how2j.diytomcat.catalina.Context@63b0b6c2
+09 24, 2020 10:19:33 上午 cn.how2j.diytomcat.Bootstrap run
+ERROR: 404 not found
+09 24, 2020 10:21:16 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:21:16 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 3 ms
+09 24, 2020 10:21:16 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:21:16 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms
+09 24, 2020 10:21:16 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/
+09 24, 2020 10:21:16 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ has finished in 0 ms
+09 24, 2020 10:21:16 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:21:16 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:21:16 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/
+09 24, 2020 10:21:16 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:21:16 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 0 ms
+09 24, 2020 10:21:16 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:21:16 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms
+09 24, 2020 10:21:16 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/
+09 24, 2020 10:21:16 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ has finished in 0 ms
+09 24, 2020 10:21:16 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:21:16 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:21:16 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/
+09 24, 2020 10:21:18 上午 cn.how2j.diytomcat.http.Request <init>
+ERROR: context has text is :cn.how2j.diytomcat.catalina.Context@7b3f2314
+09 24, 2020 10:21:18 上午 cn.how2j.diytomcat.http.Request <init>
+ERROR: Request final uri is:/logo.png
+09 24, 2020 10:21:18 上午 cn.how2j.diytomcat.Bootstrap run
+ERROR: 404 not found
+09 24, 2020 10:24:50 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:24:50 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 3 ms
+09 24, 2020 10:24:50 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:24:50 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 1 ms
+09 24, 2020 10:24:50 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/ROOT
+09 24, 2020 10:24:50 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ROOT has finished in 0 ms
+09 24, 2020 10:24:50 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:24:50 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:24:50 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT
+09 24, 2020 10:24:50 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:24:50 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 1 ms
+09 24, 2020 10:24:50 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:24:50 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms
+09 24, 2020 10:24:50 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/ROOT
+09 24, 2020 10:24:50 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ROOT has finished in 0 ms
+09 24, 2020 10:24:50 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 10:24:50 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 10:24:50 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT
+09 24, 2020 10:24:52 上午 cn.how2j.diytomcat.http.Request <init>
+ERROR: context has text is :cn.how2j.diytomcat.catalina.Context@7b3f2314
+09 24, 2020 10:24:52 上午 cn.how2j.diytomcat.http.Request <init>
+ERROR: Request final uri is:/logo.png
+09 24, 2020 10:24:52 上午 cn.how2j.diytomcat.Bootstrap run
+ERROR: response type is : image/png
+09 24, 2020 10:27:09 上午 cn.how2j.diytomcat.http.Request <init>
+ERROR: context has text is :cn.how2j.diytomcat.catalina.Context@7b3f2314
+09 24, 2020 10:27:09 上午 cn.how2j.diytomcat.http.Request <init>
+ERROR: Request final uri is:/etf.pdf
+09 24, 2020 10:27:09 上午 cn.how2j.diytomcat.Bootstrap run
+ERROR: response type is : application/pdf
+09 24, 2020 11:22:40 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 11:22:40 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 3 ms
+09 24, 2020 11:22:40 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 11:22:40 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 0 ms
+09 24, 2020 11:22:40 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/ROOT
+09 24, 2020 11:22:40 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ROOT has finished in 0 ms
+09 24, 2020 11:22:40 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 11:22:40 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 11:22:40 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT
+09 24, 2020 11:25:11 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 11:25:11 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 4 ms
+09 24, 2020 11:25:11 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 11:25:11 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 1 ms
+09 24, 2020 11:25:11 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/ROOT
+09 24, 2020 11:25:11 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ROOT has finished in 0 ms
+09 24, 2020 11:25:11 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 11:25:11 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 11:25:11 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT
+09 24, 2020 11:28:05 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 11:28:05 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/b has finished in 3 ms
+09 24, 2020 11:28:05 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 11:28:05 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/a has finished in 1 ms
+09 24, 2020 11:28:05 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deploying web application direction E:/projects/tomcat/How2jTomcat/webapps/ROOT
+09 24, 2020 11:28:05 上午 cn.how2j.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/projects/tomcat/How2jTomcat/webapps/ROOT has finished in 0 ms
+09 24, 2020 11:28:05 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/b has docPath:E:/projects/tomcat/How2jTomcat/webapps/b
+09 24, 2020 11:28:05 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/a has docPath:E:/projects/tomcat/How2jTomcat/webapps/a
+09 24, 2020 11:28:05 上午 cn.how2j.diytomcat.catalina.Host scanContextsInServerXML
+ERROR: contextMap has Path:/ has docPath:E:/projects/tomcat/How2jTomcat/webapps/ROOT
