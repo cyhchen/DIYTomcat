@@ -325,3 +325,11 @@
 [INFO ] 2020-09-24 22:33:59,677 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:D:/OneDrive/laptop-D/projects/tomcat/DIYTomcat/webapps/a 
 [INFO ] 2020-09-24 22:33:59,678 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:D:/OneDrive/laptop-D/projects/tomcat/DIYTomcat/webapps/ROOT 
 [INFO ] 2020-09-24 22:33:59,678 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/j2ee has docPath:D:/OneDrive/laptop-D/projects/tomcat/DIYTomcat/webapps/j2ee 
+[INFO ] 2020-09-24 22:38:52,346 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:D:/OneDrive/laptop-D/projects/tomcat/DIYTomcat/webapps/b 
+[INFO ] 2020-09-24 22:38:52,347 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:D:/OneDrive/laptop-D/projects/tomcat/DIYTomcat/webapps/a 
+[INFO ] 2020-09-24 22:38:52,348 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:D:/OneDrive/laptop-D/projects/tomcat/DIYTomcat/webapps/ROOT 
+[INFO ] 2020-09-24 22:38:52,348 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/j2ee has docPath:D:/OneDrive/laptop-D/projects/tomcat/DIYTomcat/webapps/j2ee 
+[INFO ] 2020-09-25 10:01:53,845 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/b has docPath:D:/OneDrive/laptop-D/projects/tomcat/DIYTomcat/webapps/b 
+[INFO ] 2020-09-25 10:01:53,847 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/a has docPath:D:/OneDrive/laptop-D/projects/tomcat/DIYTomcat/webapps/a 
+[INFO ] 2020-09-25 10:01:53,848 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/ has docPath:D:/OneDrive/laptop-D/projects/tomcat/DIYTomcat/webapps/ROOT 
+[INFO ] 2020-09-25 10:01:53,848 [main] cn.how2j.diytomcat.catalina.Host.scanContextsInServerXML(Host.java:52): contextMap has Path:/j2ee has docPath:D:/OneDrive/laptop-D/projects/tomcat/DIYTomcat/webapps/j2ee 

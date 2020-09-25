@@ -5,6 +5,7 @@ import cn.how2j.diytomcat.http.Response;
 import cn.how2j.diytomcat.util.Constant;
 import cn.how2j.diytomcat.util.WebXMLUtil;
 import cn.how2j.diytomcat.webappServlet.HelloServlet;
+import cn.how2j.diytomcat.webappServlet.InvokeServlet;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.ArrayUtil;
@@ -25,13 +26,10 @@ public class HttpProcessor {
             String uri = request.getUri();
             if (null == uri)
                 return;
-            LogFactory.get().error("uri is              "+ uri);
             Context context = request.getContext();
             String servletClassName = context.getServletClassName(uri);
             if(servletClassName != null){
-                LogFactory.get().error("servletClassName is : " + servletClassName);
-                Object servlet = ReflectUtil.newInstance(servletClassName);
-                ReflectUtil.invoke(servlet, "doGet", request, response);
+                InvokeServlet.getInstance().service(request, response);
             }
             else {
                 //处理500

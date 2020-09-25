@@ -29,6 +29,7 @@ public class Request extends BaseRequest {
 	private String uri;
 	private Service service;
 	private Context context;
+	private String method;
 	
 	public Request(Socket socket, Service service)throws IOException{
 		this.socket = socket;
@@ -39,6 +40,7 @@ public class Request extends BaseRequest {
 		}
 		parseUri();
 		parseContext();
+		parseMethod();
 		LogFactory.get().info("context has text is :" + context);			        		 
 		if(!"/".equals(context.getPath())){
 			uri = StrUtil.removePrefix(uri, context.getPath());
@@ -97,6 +99,15 @@ public class Request extends BaseRequest {
 			context = service.getEngine().getDefaultHost().getContext("/");
 		}
 		LogFactory.get().info("contextPath is " + this.context.getPath());
+	}
+
+	public void parseMethod(){
+		String str = StrUtil.subBefore(this.requestString, " ", false);
+		this.method = str;
+	}
+
+	public String getMethod(){
+		return this.method;
 	}
 }
 	
