@@ -1,8 +1,10 @@
 package cn.how2j.diytomcat.catalina;
 
+import cn.how2j.diytomcat.classloader.WebAppClassLoader;
 import cn.how2j.diytomcat.exception.WebConFigDuplicatedException;
 import cn.how2j.diytomcat.util.Constant;
 import cn.how2j.diytomcat.util.ContextXMLUtil;
+import cn.how2j.diytomcat.watcher.ContextFileChangeWatcher;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.date.TimeInterval;
 import cn.hutool.core.io.FileUtil;
@@ -27,12 +29,18 @@ public class Context {
 	private Map<String, String> servletName_className;
 	private Map<String, String> className_servletName;
 	private File contextFile;
+	private WebAppClassLoader webAppClassLoader;
+	private Host host;
+	private boolean reloadable;
+	private ContextFileChangeWatcher contextFileChangeWatcher;
 
 
-	public Context(String path, String docBase){
+	public Context(String path, String docBase, Host host, boolean reloadable){
 		TimeInterval t = DateUtil.timer();
 		this.path = path;
 		this.docBase = docBase;
+		this.host = host;
+		this.reloadable = reloadable;
 		this.contextFile = new File(this.docBase, ContextXMLUtil.getWatchedResource());
 		//logger.info("Deploying web application direction "+ this.docBase);
 		LogFactory.get().info("Deployment  "+ this.docBase + " has finished in ??????" + ContextXMLUtil.getWatchedResource());
@@ -40,6 +48,7 @@ public class Context {
 		this.url_servletClassName = new HashMap<>();
 		this.servletName_className = new HashMap<>();
 		this.className_servletName = new HashMap<>();
+		this.webAppClassLoader = new WebAppClassLoader(docBase, Thread.currentThread().getContextClassLoader());
 		deploy();
 	}
 
@@ -53,6 +62,18 @@ public class Context {
 
 	public void setDocBase(String docBase){
 		this.docBase = docBase;
+	}
+
+	public boolean getReloadable(){
+		return this.reloadable;
+	}
+
+	public void setReloadable(Boolean is){
+		this.reloadable = is;
+	}
+
+	public WebAppClassLoader getWebAppClassLoader(){
+		return this.webAppClassLoader;
 	}
 
 	private void parseServletMapping(Document d){
@@ -122,10 +143,23 @@ public class Context {
 		LogFactory.get().error("Deploying web application directory {}", this.docBase);
 		LogFactory.get().error("this.contextFile = new File(this.docBase, ContextXMLUtil.getWatchedResource()) is :"+ this.docBase + ContextXMLUtil.getWatchedResource());
 		init();
+		if(reloadable){
+			this.contextFileChangeWatcher = new ContextFileChangeWatcher(this);
+			contextFileChangeWatcher.start();
+		}
 		LogFactory.get().error("Deployment of web application directory {} has finished in {} ms",this.getDocBase(),timeInterval.intervalMs());
 	}
 
 	public String getServletClassName(String url){
 		return url_servletClassName.get(url);
+	}
+
+	public void stop(){
+		webAppClassLoader.stop();
+		contextFileChangeWatcher.stop();
+	}
+
+	public void reload(){
+		this.host.reload(this);
 	}
 }

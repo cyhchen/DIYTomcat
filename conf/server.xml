@@ -10,6 +10,7 @@
         <Context path="/a" docBase="D:/OneDrive/laptop-D/projects/tomcat/DIYTomcat/webapps/a"/>
         <Context path="/" docBase="D:/OneDrive/laptop-D/projects/tomcat/DIYTomcat/webapps/ROOT"/>
         <Context path="/j2ee" docBase="D:/OneDrive/laptop-D/projects/tomcat/DIYTomcat/webapps/j2ee"/>
+        <Context path="/javaweb" docBase="D:/OneDrive/laptop-D/projects/tomcat/JavaWeb/web"  reloadable = "true"/>
       </Host>
     </Engine>
   </Service>

@@ -95,7 +95,7 @@ public class TestTomcat {
 	
 	@Test
 	public void testBIndex(){
-		String html = getContentString("/");
+		String html = getContentString("/b/");
 		Assert.assertEquals("Hello DIY Tomcat from index.html@b", html);
 	}
 	
@@ -103,7 +103,7 @@ public class TestTomcat {
 	public void testMimeType(){
 		String txt = getHttpString("/a/a.txt");
 		System.out.println(txt);
-		Assert.assertTrue(txt.contains("Context -Type: text/plain"));
+		Assert.assertTrue(txt.contains("Context-Type: text/plain"));
 	}
 	
 	@Test
@@ -124,16 +124,15 @@ public class TestTomcat {
 	}
 
 	@Test
-	public void testHello(){
-		String txt = getContentString("/hello");
-		Assert.assertEquals("Hello DIY Tomcat from HelloServlet", txt);
-
-	}
-
-	@Test
 	public void testhello() {
 		String html = getContentString("/j2ee/hello");
 		Assert.assertEquals(html,"Hello DIY Tomcat from HelloServlet");
+	}
+
+	@Test
+	public void testJavawebHello() {
+		String html = getContentString("/javaweb/hello");
+		Assert.assertEquals(html,"Hello DIY Tomcat from HelloServlet@javaweb");
 	}
 
 }

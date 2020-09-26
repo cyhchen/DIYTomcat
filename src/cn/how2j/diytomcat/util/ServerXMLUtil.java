@@ -5,6 +5,7 @@ import cn.how2j.diytomcat.catalina.Context;
 import cn.how2j.diytomcat.catalina.Engine;
 import cn.how2j.diytomcat.catalina.Host;
 import cn.how2j.diytomcat.catalina.Service;
+import cn.hutool.core.convert.Convert;
 import cn.hutool.core.io.FileUtil;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +30,7 @@ public class ServerXMLUtil {
 		return lists;
 	}
 	
-	public static List<Context> getContext(){
+	public static List<Context> getContext(Host host){
 		List<Context> list = new ArrayList<>();
 		String xml = FileUtil.readUtf8String(Constant.serverxml);
 		Document d = Jsoup.parse(xml);
@@ -37,7 +38,8 @@ public class ServerXMLUtil {
 		for(Element e : es){
 			String path = e.attr("Path");
 			String docBase = e.attr("docBase");
-			Context context = new Context(path, docBase);
+			Boolean reloadable = Convert.toBool(e.attr("reloadable"), true);
+			Context context = new Context(path, docBase, host, reloadable);
 			list.add(context);
 		}
 		return list;

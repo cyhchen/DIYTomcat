@@ -6,6 +6,8 @@ import java.io.File;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+
+import cn.hutool.log.LogFactory;
 import org.apache.log4j.Logger;
 
 public class Host {
@@ -34,6 +36,18 @@ public class Host {
 	public Context getContext(String path){
 		return this.map.get(path);
 	}
+
+	public void reload(Context context){
+        LogFactory.get().info("Reloading Context with name [{}] has started", context.getPath());
+        String path = context.getPath();
+        String docBase = context.getDocBase();
+        boolean reloadable = context.getReloadable();
+        context.stop();
+        map.remove(path);
+        Context newContext = new Context(path, docBase, this, reloadable);
+        map.put(path, newContext);
+        LogFactory.get().info("Reloading Context with name [{}] has completed", context.getPath());
+    }
 	
 	private  void scanContextsOnWebappsFolder(){
         File[] files = Constant.webappsFolder.listFiles();
@@ -46,7 +60,7 @@ public class Host {
     }
     
     private void scanContextsInServerXML(){
-        List<Context> list = ServerXMLUtil.getContext();
+        List<Context> list = ServerXMLUtil.getContext(this);
         for(Context context : list){
             map.put(context.getPath(), context);
             logger.info("contextMap has Path:"+context.getPath()+" has docPath:"+ context.getDocBase());
@@ -61,7 +75,7 @@ public class Host {
             path = "/" + path;
         }
         String docPath = file.getAbsolutePath();
-        Context context = new Context(path, docPath);
+        Context context = new Context(path, docPath, this, true);
         map.put(context.getPath(), context);
     }
 }

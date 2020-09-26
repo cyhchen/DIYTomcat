@@ -49,6 +49,7 @@ public class Bootstrap {
         Method m = serverClazz.getMethod("start");
 
         m.invoke(serverObject);
+        System.out.println(serverClazz.getClassLoader());
     }
     
 }
