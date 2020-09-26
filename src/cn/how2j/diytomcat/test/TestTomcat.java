@@ -9,6 +9,7 @@ import cn.hutool.core.util.StrUtil;
 import cn.hutool.http.HttpUtil;
 import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -134,4 +135,5 @@ public class TestTomcat {
 		String html = getContentString("/j2ee/hello");
 		Assert.assertEquals(html,"Hello DIY Tomcat from HelloServlet");
 	}
+
 }

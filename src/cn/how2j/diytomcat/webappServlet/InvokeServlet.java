@@ -3,6 +3,7 @@ package cn.how2j.diytomcat.webappServlet;
 import cn.how2j.diytomcat.catalina.Context;
 import cn.how2j.diytomcat.http.Request;
 import cn.how2j.diytomcat.http.Response;
+import cn.how2j.diytomcat.util.Constant;
 import cn.hutool.core.util.ReflectUtil;
 
 import javax.servlet.http.HttpServlet;
@@ -25,5 +26,6 @@ public class InvokeServlet extends HttpServlet {
         String className = context.getServletClassName(uri);
         Object object = ReflectUtil.newInstance(className);
         ReflectUtil.invoke(object, "service", request, response);
+        response.setStatus(Constant.CODE_200);
     }
 }

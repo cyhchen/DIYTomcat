@@ -13,6 +13,10 @@ public class Constant {
 	public final static File serverxml = new File(confFolder, "server.xml");
 	public final static File webXmlFile = new File(confFolder, "index.xml");
 	public final static File context = new File(confFolder, "context.xml");
+	public final static int CODE_200 = 200;
+	public final static int CODE_302 = 302;
+	public final static int CODE_404 = 404;
+	public final static int CODE_500 = 500;
 	
 	public final static String textFormat_404 =  "<html><head><title>DIY Tomcat/1.0.1 - Error report</title><style>" +
             "<!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} " +

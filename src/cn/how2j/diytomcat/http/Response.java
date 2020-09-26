@@ -16,6 +16,7 @@ public class Response extends BaseResponse {
 	private PrintWriter writer;
 	private String contextType;
 	private byte[] body;
+	private int status;
 	
 	public Response(){
 		this.stringWriter = new StringWriter();
@@ -47,4 +48,11 @@ public class Response extends BaseResponse {
 		return this.body;
 	}
 
+	public void setStatus(int num){
+		this.status = num;
+	}
+
+	public int getStatus() {
+		return this.status;
+	}
 }

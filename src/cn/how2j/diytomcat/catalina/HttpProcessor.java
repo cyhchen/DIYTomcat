@@ -4,6 +4,7 @@ import cn.how2j.diytomcat.http.Request;
 import cn.how2j.diytomcat.http.Response;
 import cn.how2j.diytomcat.util.Constant;
 import cn.how2j.diytomcat.util.WebXMLUtil;
+import cn.how2j.diytomcat.webappServlet.DefaultServlet;
 import cn.how2j.diytomcat.webappServlet.HelloServlet;
 import cn.how2j.diytomcat.webappServlet.InvokeServlet;
 import cn.hutool.core.io.FileUtil;
@@ -32,36 +33,15 @@ public class HttpProcessor {
                 InvokeServlet.getInstance().service(request, response);
             }
             else {
-                //处理500
-                if ("/500.html".equals(uri)) {
-                    throw new RuntimeException("this is a exception");
-                }
-                else {
-                    if ("/".equals(uri)) {
-                        uri = WebXMLUtil.getWelcomeFile(request.getContext());
-                    }
-                    String fileName = StrUtil.removePrefix(uri, "/");
-                    File file = FileUtil.file(context.getDocBase(), fileName);
-                    if (file.exists()) {
-                        String extName = FileUtil.extName(file);
-                        String mime = WebXMLUtil.getMimeType(extName);
-                        response.setContextType(mime);
-                        LogFactory.get().info("response type is : " + response.getContextType());
-
-                        byte[] fileContent = FileUtil.readBytes(file);
-                        response.setBody(fileContent);
-                        if (fileName.equals("timeConsume.html")) {
-                            ThreadUtil.sleep(1000);
-                        }
-                    } else {
-                        LogFactory.get().error("404 not found");
-                        handle404(s, uri);
-                        return;
-                    }
-                }
+                DefaultServlet.getInstance().service(request, response);
             }
-            //处理200
-            handle200(s, response);
+            if(response.getStatus() == 200){
+                //处理200
+                handle200(s, response);
+            }else if(response.getStatus() == 404){
+                handle404(s, uri);
+            }
+
         }catch (Exception e){
             e.printStackTrace();
             LogFactory.get().error(e);

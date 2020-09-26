@@ -35,7 +35,7 @@ public class Context {
 		this.docBase = docBase;
 		this.contextFile = new File(this.docBase, ContextXMLUtil.getWatchedResource());
 		//logger.info("Deploying web application direction "+ this.docBase);
-		//logger.info("Deployment of web application directory "+ this.docBase + " has finished in " + t.intervalMs() +" ms");
+		LogFactory.get().info("Deployment  "+ this.docBase + " has finished in ??????" + ContextXMLUtil.getWatchedResource());
 		this.url_servletName = new HashMap<>();
 		this.url_servletClassName = new HashMap<>();
 		this.servletName_className = new HashMap<>();
@@ -120,6 +120,7 @@ public class Context {
 	private void deploy(){
 		TimeInterval timeInterval = DateUtil.timer();
 		LogFactory.get().error("Deploying web application directory {}", this.docBase);
+		LogFactory.get().error("this.contextFile = new File(this.docBase, ContextXMLUtil.getWatchedResource()) is :"+ this.docBase + ContextXMLUtil.getWatchedResource());
 		init();
 		LogFactory.get().error("Deployment of web application directory {} has finished in {} ms",this.getDocBase(),timeInterval.intervalMs());
 	}
