@@ -3,6 +3,7 @@ package cn.how2j.diytomcat.catalina;
 import cn.how2j.diytomcat.classloader.WebAppClassLoader;
 import cn.how2j.diytomcat.exception.WebConFigDuplicatedException;
 import cn.how2j.diytomcat.http.ApplicationContext;
+import cn.how2j.diytomcat.http.StandardServletConfig;
 import cn.how2j.diytomcat.util.Constant;
 import cn.how2j.diytomcat.util.ContextXMLUtil;
 import cn.how2j.diytomcat.watcher.ContextFileChangeWatcher;
@@ -17,9 +18,12 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import javax.servlet.Servlet;
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import java.io.File;
+import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
@@ -39,7 +43,8 @@ public class Context {
 	private ContextFileChangeWatcher contextFileChangeWatcher;
 	private ServletContext servletContext;
 	private Map<Class<?>, HttpServlet> servletPool;
-
+	private Map<String, Map<String, String>> servletName_initPrams;
+	private List<String>loadLists;
 
 	public Context(String path, String docBase, Host host, boolean reloadable){
 		TimeInterval t = DateUtil.timer();
@@ -57,6 +62,8 @@ public class Context {
 		this.webAppClassLoader = new WebAppClassLoader(docBase, Thread.currentThread().getContextClassLoader());
 		this.servletContext = new ApplicationContext(this);
 		this.servletPool = new HashMap<>();
+		this.servletName_initPrams = new HashMap<>();
+		this.loadLists = new ArrayList<>();
 		deploy();
 	}
 
@@ -88,14 +95,32 @@ public class Context {
 		return this.servletContext;
 	}
 
-	public synchronized HttpServlet getServlet(Class<?> clazz) throws IllegalAccessException, InstantiationException {
+	public synchronized HttpServlet getServlet(Class<?> clazz) throws IllegalAccessException, InstantiationException, ServletException, NoSuchMethodException, InvocationTargetException {
 		HttpServlet httpServlet = servletPool.get(clazz);
 		if(httpServlet != null){
 			return httpServlet;
 		}
-		HttpServlet newHttpServlet = (HttpServlet) clazz.newInstance();
+		HttpServlet newHttpServlet = (HttpServlet) clazz.getConstructor().newInstance();
+		String servletName = className_servletName.get(clazz.getName());
+		Map<String, String> initmap = servletName_initPrams.get(clazz.getName());
+		StandardServletConfig standardServletConfig = new StandardServletConfig(this.getServletContext(), servletName, initmap);
+		newHttpServlet.init(standardServletConfig);
 		servletPool.put(clazz, newHttpServlet);
 		return newHttpServlet;
+	}
+
+	private void parseServletInitParams(Document d){
+		Elements es = d.select("servlet-class");
+		for(Element e : es){
+			String className = e.text();
+			Map<String,String> map = new HashMap<>();
+			for(Element i : e.parents().select("init-param")){
+				String name = i.select("param-name").text();
+				String value = i.select("param-value").text();
+				map.put(name, value);
+			}
+			this.servletName_initPrams.put(className, map);
+		}
 	}
 
 	private void parseServletMapping(Document d){
@@ -155,6 +180,9 @@ public class Context {
 			String xml = FileUtil.readUtf8String(this.contextFile);
 			Document d = Jsoup.parse(xml);
 			parseServletMapping(d);
+			parseServletInitParams(d);
+			parseLoadOnStartUp(d);
+			startUpServlet();
 		}catch (WebConFigDuplicatedException e){
 			e.printStackTrace();
 		}
@@ -172,6 +200,27 @@ public class Context {
 		LogFactory.get().error("Deployment of web application directory {} has finished in {} ms",this.getDocBase(),timeInterval.intervalMs());
 	}
 
+	private void parseLoadOnStartUp(Document d){
+		Elements es = d.select("load-start");
+		for(Element e : es){
+			String className = e.parent().select("servlet-class").text();
+			loadLists.add(className);
+		}
+	}
+
+	private void startUpServlet(){
+		try{
+			for(String i : this.loadLists){
+				Class<?> clazz = this.webAppClassLoader.loadClass(i);
+				getServlet(clazz);
+				LogFactory.get().error("clazz is: "+clazz);
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+
+	}
+
 	public String getServletClassName(String url){
 		return url_servletClassName.get(url);
 	}
@@ -179,9 +228,17 @@ public class Context {
 	public void stop(){
 		webAppClassLoader.stop();
 		contextFileChangeWatcher.stop();
+		destroyServlets();
 	}
 
 	public void reload(){
 		this.host.reload(this);
+	}
+
+	public void destroyServlets(){
+		Collection<HttpServlet> c = servletPool.values();
+		for(HttpServlet i : c){
+			i.destroy();
+		}
 	}
 }

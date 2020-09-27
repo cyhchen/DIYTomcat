@@ -12,6 +12,12 @@ public class StandardServletConfig implements ServletConfig {
     private String servletName;
     private Map<String, String> initParaments;
 
+    public StandardServletConfig(ServletContext servletContext, String servletName, Map<String, String> initParaments){
+        this.servletContext = servletContext;
+        this.servletName = servletName;
+        this.initParaments = initParaments;
+    }
+
     @Override
     public String getServletName() {
         return this.servletName;
