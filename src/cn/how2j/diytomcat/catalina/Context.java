@@ -2,6 +2,7 @@ package cn.how2j.diytomcat.catalina;
 
 import cn.how2j.diytomcat.classloader.WebAppClassLoader;
 import cn.how2j.diytomcat.exception.WebConFigDuplicatedException;
+import cn.how2j.diytomcat.http.ApplicationContext;
 import cn.how2j.diytomcat.util.Constant;
 import cn.how2j.diytomcat.util.ContextXMLUtil;
 import cn.how2j.diytomcat.watcher.ContextFileChangeWatcher;
@@ -15,6 +16,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import javax.servlet.ServletContext;
 import java.io.File;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
@@ -33,6 +35,7 @@ public class Context {
 	private Host host;
 	private boolean reloadable;
 	private ContextFileChangeWatcher contextFileChangeWatcher;
+	private ServletContext servletContext;
 
 
 	public Context(String path, String docBase, Host host, boolean reloadable){
@@ -49,6 +52,7 @@ public class Context {
 		this.servletName_className = new HashMap<>();
 		this.className_servletName = new HashMap<>();
 		this.webAppClassLoader = new WebAppClassLoader(docBase, Thread.currentThread().getContextClassLoader());
+		this.servletContext = new ApplicationContext(this);
 		deploy();
 	}
 
@@ -74,6 +78,10 @@ public class Context {
 
 	public WebAppClassLoader getWebAppClassLoader(){
 		return this.webAppClassLoader;
+	}
+
+	public ServletContext getServletContext() {
+		return this.servletContext;
 	}
 
 	private void parseServletMapping(Document d){

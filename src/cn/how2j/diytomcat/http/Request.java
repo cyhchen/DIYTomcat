@@ -7,21 +7,10 @@ import cn.how2j.diytomcat.util.MiniBrowser;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.LogFactory;
 
-import java.io.BufferedReader;
+import javax.servlet.ServletContext;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
 import java.net.Socket;
-import java.security.Principal;
-import java.util.Collection;
-import java.util.Enumeration;
-import java.util.Locale;
-import java.util.Map;
-
-import org.apache.log4j.Logger;
-
-import javax.servlet.*;
-import javax.servlet.http.*;
 
 public class Request extends BaseRequest {
 	private Socket socket;
@@ -61,6 +50,15 @@ public class Request extends BaseRequest {
 
 	public Context getContext() {
 		return this.context;
+	}
+
+	public String getRealPath(String path){
+		return this.context.getServletContext().getRealPath(path);
+	}
+
+	@Override
+	public ServletContext getServletContext() {
+		return this.context.getServletContext();
 	}
 
 	private void parseHttpRequest() throws IOException {
