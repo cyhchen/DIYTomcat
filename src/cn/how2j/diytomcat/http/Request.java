@@ -4,6 +4,7 @@ import cn.how2j.diytomcat.catalina.Context;
 import cn.how2j.diytomcat.catalina.Engine;
 import cn.how2j.diytomcat.catalina.Service;
 import cn.how2j.diytomcat.util.MiniBrowser;
+import cn.hutool.core.io.IoUtil;
 import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.core.util.URLUtil;
@@ -12,11 +13,9 @@ import cn.hutool.log.LogFactory;
 import javax.servlet.ServletContext;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.StringReader;
 import java.net.Socket;
-import java.util.Collections;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Request extends BaseRequest {
 	private Socket socket;
@@ -26,11 +25,13 @@ public class Request extends BaseRequest {
 	private Context context;
 	private String method;
 	private Map<String, String[]> paramMap;
-	
+	private Map<String, String> headMap;
+
 	public Request(Socket socket, Service service)throws IOException{
 		this.socket = socket;
 		this.service = service;
 		this.paramMap = new HashMap<>();
+		this.headMap = new HashMap<>();
 		parseHttpRequest();
 		if(StrUtil.isEmpty(requestString)){
 			return;
@@ -39,6 +40,7 @@ public class Request extends BaseRequest {
 		parseContext();
 		parseMethod();
 		parseParam();
+		parseHead();
 		LogFactory.get().info("context has text is :" + context);			        		 
 		if(!"/".equals(context.getPath())){
 			uri = StrUtil.removePrefix(uri, context.getPath());
@@ -74,6 +76,22 @@ public class Request extends BaseRequest {
 		InputStream is = this.socket.getInputStream();
 		byte[] bytes = MiniBrowser.readBytes(is, false);
 		requestString = new String(bytes, "utf-8");
+	}
+
+	private void parseHead(){
+		StringReader reader = new StringReader(this.requestString);
+		List<String> list = new ArrayList<>();
+		IoUtil.readLines(reader,list);
+		for(int i = 1;i < list.size();i++){
+			if(list.get(i).length() == 0){
+				break;
+			}
+			LogFactory.get().error("strs is:" + i + "," + list.get(i));
+			String[] strs = list.get(i).split(":");
+			String name = strs[0].toLowerCase();
+			String value = strs[1];
+			headMap.put(name, value);
+		}
 	}
 	
 	private void parseUri(){
@@ -115,10 +133,13 @@ public class Request extends BaseRequest {
 			LogFactory.get().error("queryString1 is: "+queryString);
 			if(StrUtil.contains(queryString, "?")){
 				queryString = StrUtil.subAfter(queryString,"?", false);
+			}else{
+				queryString = null;
 			}
 		}else if("POST".equals(method)){
 			queryString = StrUtil.subAfter(queryString, "\r\n\r\n", false);
-		}else{
+		}
+		if(queryString == null){
 			return;
 		}
 		LogFactory.get().error("queryString2 is : " + queryString);
@@ -138,6 +159,23 @@ public class Request extends BaseRequest {
 				paramMap.put(name, values);
 			}
 		}
+	}
+
+	@Override
+	public int getIntHeader(String s) {
+		String value = headMap.get(s.toLowerCase());
+		return Integer.valueOf(value);
+	}
+
+	@Override
+	public String getHeader(String s){
+		String value = headMap.get(s.toLowerCase());
+		return value;
+	}
+
+	@Override
+	public Enumeration getHeaderNames(){
+		return Collections.enumeration(headMap.keySet());
 	}
 
 	public void parseMethod(){

@@ -148,5 +148,13 @@ public class TestTomcat {
 		Assert.assertEquals(html,"get name:meepo");
 	}
 
+	@Test
+	public void testHead(){
+		String uri = "/javaweb/header";
+		String url = StrUtil.format("http://{}:{}{}", ip,port,uri);
+		String txt = MiniBrowser.getContentString(url);
+		Assert.assertEquals("how2j mini brower / java1.8",txt);
+	}
+
 
 }

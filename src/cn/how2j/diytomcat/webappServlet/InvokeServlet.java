@@ -5,6 +5,7 @@ import cn.how2j.diytomcat.http.Request;
 import cn.how2j.diytomcat.http.Response;
 import cn.how2j.diytomcat.util.Constant;
 import cn.hutool.core.util.ReflectUtil;
+import cn.hutool.log.LogFactory;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -29,6 +30,7 @@ public class InvokeServlet extends HttpServlet {
             Class<?> clazz = context.getWebAppClassLoader().loadClass(className);
             //Object object = ReflectUtil.newInstance(clazz);
             Object object = request.getContext().getServlet(clazz);
+            LogFactory.get().error("request is: "+ request + "   response is: " + response + "   object is:" + object.getClass());
             ReflectUtil.invoke(object, "service", request, response);
             response.setStatus(Constant.CODE_200);
             System.out.println("servletClass:" + clazz);
