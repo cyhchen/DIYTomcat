@@ -61,7 +61,7 @@ public class HttpProcessor {
     private static void handle200(Socket s, Response response) throws IOException {
         String contentType = response.getContextType();
         String headText = Constant.response_head_202;
-        headText = StrUtil.format(headText, contentType);
+        headText = StrUtil.format(headText, contentType, response.getCookieHead());
         byte[] head = headText.getBytes();
 
         byte[] body = response.getBody();

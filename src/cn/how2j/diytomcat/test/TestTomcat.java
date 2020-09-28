@@ -156,5 +156,12 @@ public class TestTomcat {
 		Assert.assertEquals("how2j mini brower / java1.8",txt);
 	}
 
+	@Test
+	public void testsetCookie() {
+		String html = getHttpString("/javaweb/setcookie");
+		System.out.println("html is: "+html);
+		Assert.assertTrue(html.contains("Set-Cookie:name=Gareen(cookie);Expires="));
+	}
+
 
 }
