@@ -11,6 +11,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -21,7 +23,7 @@ import org.junit.Test;
 public class TestTomcat {
 	private static int port = 18080;
 	private static String ip = "127.0.0.1";
-	
+
 	@BeforeClass
 	public static void beforeClass(){
 		//查看tomcat是否已经启动
@@ -32,43 +34,43 @@ public class TestTomcat {
 			System.out.println("检测到端口号"+port+"已经启动，开始单元测试......");
 		}
 	}
-	
+
 	private String getContentString(String uri){
 		String url = StrUtil.format("http://{}:{}{}",ip,port,uri);
 		String content = MiniBrowser.getContentString(url);
 		return content;
 	}
-	
+
 	private String getHttpString(String uri){
 		String url = StrUtil.format("http://{}:{}{}",ip,port,uri);
 		String http = MiniBrowser.getHttpString(url);
 		return http;
 	}
-	
+
 	private byte[] getContentBytes(String uri){
 		return getContentBytes(uri, false);
 	}
-	
+
 	private byte[] getContentBytes(String uri, boolean flag){
 		String url = StrUtil.format("http://{}:{}{}",ip,port,uri);
 		byte[] http = MiniBrowser.getContentBytes(url, flag);
 		return http;
 	}
-	
+
 	@Test
 	public void test404(){
 		String res = getHttpString("/a/not_exist.html");
 		System.out.println(res);
 		Assert.assertTrue(res.contains("HTTP/1.1 404 Not Found"));
 	}
-	
+
 	@Test
 	public void test500(){
 		String res = getHttpString("/500.html");
 		System.out.println(res);
 		Assert.assertTrue(res.contains("HTTP/1.1 500 Internet Server Error"));
 	}
-	
+
 	@Test
 	public void testHelloTomcat() throws InterruptedException {
 		ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(20,20,60, TimeUnit.SECONDS,new LinkedBlockingDeque<Runnable>(10));
@@ -85,34 +87,34 @@ public class TestTomcat {
 		threadPoolExecutor.awaitTermination(1,TimeUnit.HOURS);
 		long duration = timeInterval.intervalMs();
 		Assert.assertTrue(duration < 3000);
-	}	
-	
+	}
+
 	@Test
 	public void testIndex(){
 		String html = getContentString("/a");
 		Assert.assertEquals("Hello DIY Tomcat from index.html@a", html);
-	} 
-	
+	}
+
 	@Test
 	public void testBIndex(){
 		String html = getContentString("/b/");
 		Assert.assertEquals("Hello DIY Tomcat from index.html@b", html);
 	}
-	
+
 	@Test
 	public void testMimeType(){
 		String txt = getHttpString("/a/a.txt");
 		System.out.println(txt);
 		Assert.assertTrue(txt.contains("Context-Type: text/plain"));
 	}
-	
+
 	@Test
 	public void testPNG(){
 		byte[] bytes = getContentBytes("/logo.png");
 		int length = 1672;
 		Assert.assertEquals(length, bytes.length);
 	}
-	
+
 	@Test
 	public void testPDF(){
 		String uri = "/etf.pdf";
@@ -135,5 +137,16 @@ public class TestTomcat {
 		String html2 = getContentString("/javaweb/hello");
 		Assert.assertEquals(html1,html2);
 	}
+
+	@Test
+	public void testgetParam() {
+		String uri = "/javaweb/param";
+		String url = StrUtil.format("http://{}:{}{}", ip,port,uri);
+		Map<String,Object> params = new HashMap<>();
+		params.put("name","meepo");
+		String html = MiniBrowser.getContentString(url, params, true);
+		Assert.assertEquals(html,"get name:meepo");
+	}
+
 
 }
