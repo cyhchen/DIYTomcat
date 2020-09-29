@@ -3,6 +3,7 @@ package cn.how2j.diytomcat.catalina;
 import cn.how2j.diytomcat.http.Request;
 import cn.how2j.diytomcat.http.Response;
 import cn.how2j.diytomcat.util.Constant;
+import cn.how2j.diytomcat.util.SessionManager;
 import cn.how2j.diytomcat.util.WebXMLUtil;
 import cn.how2j.diytomcat.webappServlet.DefaultServlet;
 import cn.how2j.diytomcat.webappServlet.HelloServlet;
@@ -14,6 +15,8 @@ import cn.hutool.core.util.ReflectUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.LogFactory;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -24,6 +27,7 @@ public class HttpProcessor {
 
     public void execute(Request request, Response response, Socket s){
         try{
+            getHttp(request, response);
             String uri = request.getUri();
             if (null == uri)
                 return;
@@ -56,6 +60,13 @@ public class HttpProcessor {
             }
         }
 
+    }
+
+    private void getHttp(Request request, Response response){
+        String id = request.getSessionIdFromCookie();
+        LogFactory.get().error("4. httprocessor is: " + id);
+        HttpSession httpSession = SessionManager.getSession(id, request, response);
+        request.setHttpSession(httpSession);
     }
 
     private static void handle200(Socket s, Response response) throws IOException {

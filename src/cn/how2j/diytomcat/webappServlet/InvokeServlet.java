@@ -30,11 +30,10 @@ public class InvokeServlet extends HttpServlet {
             Class<?> clazz = context.getWebAppClassLoader().loadClass(className);
             //Object object = ReflectUtil.newInstance(clazz);
             Object object = request.getContext().getServlet(clazz);
-            LogFactory.get().error("request is: "+ request + "   response is: " + response + "   object is:" + object.getClass());
             ReflectUtil.invoke(object, "service", request, response);
             response.setStatus(Constant.CODE_200);
             System.out.println("servletClass:" + clazz);
-            System.out.println("servletClass'classLoader:" + clazz.getClassLoader());
+            System.out.println("classLoader:" + clazz.getClassLoader());
         } catch (Exception e) {
             e.printStackTrace();
         }

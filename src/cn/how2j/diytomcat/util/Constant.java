@@ -11,7 +11,7 @@ public class Constant {
 	public final static File rootFolder = new File(webappsFolder,"ROOT");
 	public final static File confFolder = new File(SystemUtil.get("user.dir"), "conf");
 	public final static File serverxml = new File(confFolder, "server.xml");
-	public final static File webXmlFile = new File(confFolder, "index.xml");
+	public final static File webXmlFile = new File(confFolder, "web.xml");
 	public final static File context = new File(confFolder, "context.xml");
 	public final static int CODE_200 = 200;
 	public final static int CODE_302 = 302;

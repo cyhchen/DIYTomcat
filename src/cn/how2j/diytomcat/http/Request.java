@@ -12,6 +12,7 @@ import cn.hutool.log.LogFactory;
 
 import javax.servlet.ServletContext;
 import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringReader;
@@ -28,6 +29,7 @@ public class Request extends BaseRequest {
 	private Map<String, String[]> paramMap;
 	private Map<String, String> headMap;
 	private Cookie[] cookies;
+	private HttpSession session;
 
 	public Request(Socket socket, Service service)throws IOException{
 		this.socket = socket;
@@ -44,7 +46,6 @@ public class Request extends BaseRequest {
 		parseParam();
 		parseHead();
 		parseCookies();
-		LogFactory.get().info("context has text is :" + context);			        		 
 		if(!"/".equals(context.getPath())){
 			uri = StrUtil.removePrefix(uri, context.getPath());
 			if(StrUtil.isEmpty(uri)){
@@ -71,6 +72,15 @@ public class Request extends BaseRequest {
 	}
 
 	@Override
+	public HttpSession getSession(){
+		return this.session;
+	}
+
+	public void setHttpSession(HttpSession session){
+		this.session = session;
+	}
+
+	@Override
 	public ServletContext getServletContext() {
 		return this.context.getServletContext();
 	}
@@ -78,6 +88,16 @@ public class Request extends BaseRequest {
 	@Override
 	public Cookie[] getCookies(){
 		return this.cookies;
+	}
+
+	public String getSessionIdFromCookie(){
+		for(Cookie i : this.cookies){
+			LogFactory.get().error("5. cookies has : " + i.getName() + " : " + i.getValue());
+			if("JSESSIONID".equals(i.getName())){
+				return i.getValue();
+			}
+		}
+		return null;
 	}
 
 	private void parseCookies(){
