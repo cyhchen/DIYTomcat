@@ -11,6 +11,7 @@ import cn.hutool.core.util.URLUtil;
 import cn.hutool.log.LogFactory;
 
 import javax.servlet.ServletContext;
+import javax.servlet.http.Cookie;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringReader;
@@ -26,6 +27,7 @@ public class Request extends BaseRequest {
 	private String method;
 	private Map<String, String[]> paramMap;
 	private Map<String, String> headMap;
+	private Cookie[] cookies;
 
 	public Request(Socket socket, Service service)throws IOException{
 		this.socket = socket;
@@ -41,6 +43,7 @@ public class Request extends BaseRequest {
 		parseMethod();
 		parseParam();
 		parseHead();
+		parseCookies();
 		LogFactory.get().info("context has text is :" + context);			        		 
 		if(!"/".equals(context.getPath())){
 			uri = StrUtil.removePrefix(uri, context.getPath());
@@ -70,6 +73,30 @@ public class Request extends BaseRequest {
 	@Override
 	public ServletContext getServletContext() {
 		return this.context.getServletContext();
+	}
+
+	@Override
+	public Cookie[] getCookies(){
+		return this.cookies;
+	}
+
+	private void parseCookies(){
+		List<Cookie> lists = new ArrayList<>();
+		String value = this.headMap.get("cookie");
+		if(value != null){
+			String[] paras = StrUtil.split(value,";");
+			for(String i : paras){
+				if(StrUtil.isBlank(i)){
+					continue;
+				}
+				String[] is = StrUtil.split(i,"=");
+				String k = is[0].trim();
+				String v = is[1].trim();
+				Cookie cookie = new Cookie(k,v);
+				lists.add(cookie);
+			}
+		}
+		this.cookies = ArrayUtil.toArray(lists, Cookie.class);
 	}
 
 	private void parseHttpRequest() throws IOException {
