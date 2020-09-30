@@ -28,6 +28,8 @@ public class Request extends BaseRequest {
 	private String method;
 	private Map<String, String[]> paramMap;
 	private Map<String, String> headMap;
+	private Map<String, Object> attributeMap;
+
 	private Cookie[] cookies;
 	private HttpSession session;
 	private Boolean forward;
@@ -37,6 +39,7 @@ public class Request extends BaseRequest {
 		this.service = service;
 		this.paramMap = new HashMap<>();
 		this.headMap = new HashMap<>();
+		this.attributeMap = new HashMap<>();
 		this.forward = false;
 		parseHttpRequest();
 		if(StrUtil.isEmpty(requestString)){
@@ -55,6 +58,26 @@ public class Request extends BaseRequest {
 			}
 		}
 		LogFactory.get().info("Request final uri is:"+this.uri);
+	}
+
+	@Override
+	public void setAttribute(String name, Object value){
+		this.attributeMap.put(name, value);
+	}
+
+	@Override
+	public Object getAttribute(String name){
+		return this.attributeMap.get(name);
+	}
+
+	@Override
+	public void removeAttribute(String s) {
+		this.attributeMap.remove(s);
+	}
+
+	@Override
+	public Enumeration<String> getAttributeNames(){
+		return Collections.enumeration(this.attributeMap.keySet());
 	}
 
 	public void setForward(boolean b){

@@ -213,8 +213,9 @@ public class TestTomcat {
 
 	@Test
 	public void testServerJump(){
-		String http_servlet = getContentString("/javaweb/serverjump");
-		containAssert(http_servlet, "Hello DIY Tomcat from HelloServlet@javaweb");
+		String http_servlet = getHttpString("/javaweb/serverjump");
+		System.out.println(http_servlet);
+		containAssert(http_servlet, "jack");
 	}
 
 	private void containAssert(String html, String string) {
