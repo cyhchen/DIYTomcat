@@ -43,6 +43,9 @@ public class HttpProcessor {
             else{
                 DefaultServlet.getInstance().service(request, response);
             }
+            if(request.isForward()){
+                return;
+            }
             if(response.getStatus() == 200){
                 //处理200
                 handle200(s, response);

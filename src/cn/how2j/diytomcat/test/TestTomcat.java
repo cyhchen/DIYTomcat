@@ -211,6 +211,12 @@ public class TestTomcat {
 		containAssert(http_servlet,"HTTP/1.1 302 Found");
 	}
 
+	@Test
+	public void testServerJump(){
+		String http_servlet = getContentString("/javaweb/serverjump");
+		containAssert(http_servlet, "Hello DIY Tomcat from HelloServlet@javaweb");
+	}
+
 	private void containAssert(String html, String string) {
 		boolean match = StrUtil.containsAny(html, string);
 		Assert.assertTrue(match);

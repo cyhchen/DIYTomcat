@@ -30,12 +30,14 @@ public class Request extends BaseRequest {
 	private Map<String, String> headMap;
 	private Cookie[] cookies;
 	private HttpSession session;
+	private Boolean forward;
 
 	public Request(Socket socket, Service service)throws IOException{
 		this.socket = socket;
 		this.service = service;
 		this.paramMap = new HashMap<>();
 		this.headMap = new HashMap<>();
+		this.forward = false;
 		parseHttpRequest();
 		if(StrUtil.isEmpty(requestString)){
 			return;
@@ -54,11 +56,32 @@ public class Request extends BaseRequest {
 		}
 		LogFactory.get().info("Request final uri is:"+this.uri);
 	}
-	
+
+	public void setForward(boolean b){
+		this.forward = b;
+	}
+
+	public boolean isForward(){
+		return this.forward;
+	}
+
+	@Override
+	public ApplicationRequestDispatcher getRequestDispatcher(String uri){
+		return new ApplicationRequestDispatcher(uri);
+	}
+
 	public String getUri(){
 		return this.uri;
 	}
-	
+
+	public void setUri(String uri){
+		this.uri = uri;
+	}
+
+	public Socket getSocket(){
+		return this.socket;
+	}
+
 	public String getRequestString(){
 		return this.requestString;
 	}
