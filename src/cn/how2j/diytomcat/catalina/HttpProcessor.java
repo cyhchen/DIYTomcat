@@ -46,6 +46,8 @@ public class HttpProcessor {
             if(response.getStatus() == 200){
                 //处理200
                 handle200(s, response);
+            }else if(response.getStatus() == 302){
+                handle302(s, response);
             }else if(response.getStatus() == 404){
                 handle404(s, uri);
             }
@@ -87,6 +89,15 @@ public class HttpProcessor {
 
         OutputStream os = s.getOutputStream();
         os.write(responseBytes);
+    }
+
+    protected static void handle302(Socket s, Response response) throws IOException{
+        OutputStream os = s.getOutputStream();
+        String redirectPath = response.getRedirect();
+        String head_txt = Constant.response_head_302;
+        String header = StrUtil.format(head_txt, redirectPath);
+        byte[] bytes = header.getBytes("utf-8");
+        os.write(bytes);
     }
 
     protected static void handle404(Socket s, String uri) throws IOException{

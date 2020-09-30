@@ -5,6 +5,7 @@ import java.io.File;
 
 public class Constant {
 	public final static String response_head_202 = "HTTP/1.1 200 OK\r\n" + "Context-Type: {}{}\r\n\r\n";
+	public final static String response_head_302 = "HTTP/1.1 302 Found\r\nLocation:{}\r\n\r\n";
 	public final static String response_head_404 = "HTTP/1.1 404 Not Found\r\n" + "Content-Type: test/html\r\n\r\n";
 	public final static String response_head_500 = "HTTP/1.1 500 Internet Server Error\r\n";
 	public final static File webappsFolder = new File(SystemUtil.get("user.dir"),"webapps");

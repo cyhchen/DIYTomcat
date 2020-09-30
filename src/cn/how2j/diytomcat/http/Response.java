@@ -21,6 +21,7 @@ public class Response extends BaseResponse {
 	private byte[] body;
 	private int status;
 	private List<Cookie> cookieList;
+	private String redirectPath;
 
 	public Response(){
 		this.stringWriter = new StringWriter();
@@ -45,6 +46,15 @@ public class Response extends BaseResponse {
 		this.body = bytes;
 	}
 
+
+	public String getRedirect(){
+		return this.redirectPath;
+	}
+
+	@Override
+	public void sendRedirect(String s) throws IOException {
+		this.redirectPath = s;
+	}
 	@Override
 	public void addCookie(Cookie cookie){
 		cookieList.add(cookie);
