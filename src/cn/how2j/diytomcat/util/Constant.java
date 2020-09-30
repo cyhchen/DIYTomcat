@@ -13,6 +13,7 @@ public class Constant {
 	public final static File serverxml = new File(confFolder, "server.xml");
 	public final static File webXmlFile = new File(confFolder, "web.xml");
 	public final static File context = new File(confFolder, "context.xml");
+	public final static String workFolder = SystemUtil.get("user.dir") + File.separator + "work";
 	public final static int CODE_200 = 200;
 	public final static int CODE_302 = 302;
 	public final static int CODE_404 = 404;
