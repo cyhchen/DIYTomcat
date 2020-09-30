@@ -15,14 +15,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 
-public class DefaultServlet extends HttpServlet {
-    private static final DefaultServlet instance = new DefaultServlet();
+public class JspServlet extends HttpServlet {
+    private static final JspServlet instance = new JspServlet();
 
-    private DefaultServlet(){
+    private JspServlet(){
 
     }
 
-    public static DefaultServlet getInstance(){
+    public static JspServlet getInstance(){
         return instance;
     }
 
@@ -32,15 +32,8 @@ public class DefaultServlet extends HttpServlet {
         Response response = (Response) httpServletResponse;
         Context context = request.getContext();
         String uri = request.getUri();
-        if ("/500.html".equals(uri)) {
-            throw new RuntimeException("this is a exception");
-        }
         if ("/".equals(uri)) {
             uri = WebXMLUtil.getWelcomeFile(request.getContext());
-        }
-        if("./jsp".endsWith(uri)){
-            JspServlet.getInstance().service(httpServletRequest, httpServletResponse);
-            return;
         }
         String fileName = StrUtil.removePrefix(uri, "/");
         File file = FileUtil.file(request.getRealPath(fileName));

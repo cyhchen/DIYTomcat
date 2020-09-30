@@ -198,5 +198,12 @@ public class TestTomcat {
 		Assert.assertTrue(html.contains("jsession"));
 	}
 
+	@Test
+	public void testsetJSP() {
+		String html = getContentString("/javaweb/");
+		System.out.println("html is: "+html);
+		Assert.assertTrue(html.contains("hello jsp@javaweb"));
+	}
+
 
 }

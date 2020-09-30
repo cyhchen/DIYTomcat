@@ -8,6 +8,7 @@ import cn.how2j.diytomcat.util.WebXMLUtil;
 import cn.how2j.diytomcat.webappServlet.DefaultServlet;
 import cn.how2j.diytomcat.webappServlet.HelloServlet;
 import cn.how2j.diytomcat.webappServlet.InvokeServlet;
+import cn.how2j.diytomcat.webappServlet.JspServlet;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.ArrayUtil;
@@ -36,7 +37,10 @@ public class HttpProcessor {
             if(servletClassName != null){
                 InvokeServlet.getInstance().service(request, response);
             }
-            else {
+            else if(uri.endsWith(".jsp")){
+                JspServlet.getInstance().service(request, response);
+            }
+            else{
                 DefaultServlet.getInstance().service(request, response);
             }
             if(response.getStatus() == 200){
