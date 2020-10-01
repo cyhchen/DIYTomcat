@@ -52,8 +52,7 @@ public class Context {
 	private boolean reloadable;
 	private ContextFileChangeWatcher contextFileChangeWatcher;
 	private ServletContext servletContext;
-
-
+	private List<ServletContextListener> listeners;
 	private List<String>loadLists;
 
 	public Context(String path, String docBase, Host host, boolean reloadable){
@@ -82,8 +81,45 @@ public class Context {
 		this.servletContext = new ApplicationContext(this);
 		this.servletPool = new HashMap<>();
 
+		this.listeners = new ArrayList<>();
 		this.loadLists = new ArrayList<>();
 		deploy();
+	}
+
+	public void addListener(ServletContextListener servletContextListener){
+		this.listeners.add(servletContextListener);
+	}
+
+	private void loadListeners(){
+		try{
+			if(!contextFile.exists()){
+				return;
+			}
+			String xml = FileUtil.readUtf8String(contextFile);
+			Document d = Jsoup.parse(xml);
+			Elements es = d.select("listener listener-class");
+			for(Element e : es) {
+				String className = e.text();
+				System.out.println("className is " + className);
+				Class<?> clazz = this.getWebAppClassLoader().loadClass(className);
+				ServletContextListener s = (ServletContextListener) clazz.newInstance();
+				this.listeners.add(s);
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+
+	private void fireEvent(String type){
+		ServletContextEvent servletContextEvent = new ServletContextEvent(this.servletContext);
+		for(ServletContextListener s : this.listeners){
+			if("init".equals(type)) {
+				s.contextInitialized(servletContextEvent);
+			}
+			if("destroy".equals(type)){
+				s.contextDestroyed(servletContextEvent);
+			}
+		}
 	}
 
 	public String getPath(){
@@ -266,6 +302,7 @@ public class Context {
 	private void initFilter(){
 		Set<String> sets = className_filterName.keySet();
 		for(String i : sets){
+			System.out.println("FilterName is " + i );
 			try{
 				Class clazz = this.getWebAppClassLoader().loadClass(i);
 				Map<String,String> map = filterName_initPrams.get(i);
@@ -311,6 +348,7 @@ public class Context {
 			return;
 		}
 		try{
+			fireEvent("init");
 			checkDuplicated();
 			String xml = FileUtil.readUtf8String(this.contextFile);
 			Document d = Jsoup.parse(xml);
@@ -328,8 +366,9 @@ public class Context {
 
 	private void deploy(){
 		TimeInterval timeInterval = DateUtil.timer();
-		LogFactory.get().error("Deploying web application directory {}", this.docBase);
+		//LogFactory.get().error("Deploying web application directory {}", this.docBase);
 		LogFactory.get().error("this.contextFile = new File(this.docBase, ContextXMLUtil.getWatchedResource()) is :"+ this.docBase + ContextXMLUtil.getWatchedResource());
+		loadListeners();
 		init();
 		if(reloadable){
 			this.contextFileChangeWatcher = new ContextFileChangeWatcher(this);
@@ -367,6 +406,7 @@ public class Context {
 		webAppClassLoader.stop();
 		contextFileChangeWatcher.stop();
 		destroyServlets();
+		fireEvent("stop");
 	}
 
 	public void reload(){
