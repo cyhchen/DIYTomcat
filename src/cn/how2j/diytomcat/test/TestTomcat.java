@@ -232,7 +232,7 @@ public class TestTomcat {
 
 	@Test
 	public void testJavaweb0Hello() {
-		String html = getContentString("/javaweb0/hello");
+		String html = getContentString("/javaweb1/hello");
 		System.out.println(html);
 		containAssert(html,"Hello DIY Tomcat from HelloServlet@javaweb");
 	}

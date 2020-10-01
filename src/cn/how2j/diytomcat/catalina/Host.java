@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import cn.how2j.diytomcat.watcher.WarFileWatcher;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.util.RuntimeUtil;
 import cn.hutool.core.util.StrUtil;
@@ -27,6 +28,8 @@ public class Host {
 		//scanContextsOnWebappsFolder();
 		scanContextsInServerXML();
 		scanWarsOnWebappsFolder();
+
+		new WarFileWatcher(this).start();
 	}
 	
 	public void setName(String name){
