@@ -16,12 +16,16 @@ import cn.hutool.core.util.ReflectUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.LogFactory;
 
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.Socket;
+import java.util.List;
 import java.util.logging.Logger;
 
 public class HttpProcessor {
@@ -34,15 +38,21 @@ public class HttpProcessor {
                 return;
             Context context = request.getContext();
             String servletClassName = context.getServletClassName(uri);
+            HttpServlet workingServlet;
             if(servletClassName != null){
-                InvokeServlet.getInstance().service(request, response);
+                workingServlet = InvokeServlet.getInstance();
             }
             else if(uri.endsWith(".jsp")){
-                JspServlet.getInstance().service(request, response);
+                workingServlet = JspServlet.getInstance();
             }
             else{
-                DefaultServlet.getInstance().service(request, response);
+                workingServlet = DefaultServlet.getInstance();
             }
+            List<Filter> lists = request.getContext().getMatchedFilters(request.getRequestURI());
+            LogFactory.get().error("Filters has " + lists.size());
+            FilterChain filterChain = new ApplicationFilterChain(lists, workingServlet);
+            filterChain.doFilter(request, response);
+
             if(request.isForward()){
                 return;
             }

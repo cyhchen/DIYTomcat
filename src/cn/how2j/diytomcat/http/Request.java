@@ -66,6 +66,11 @@ public class Request extends BaseRequest {
 	}
 
 	@Override
+    public String getRequestURI(){
+	    return this.uri;
+    }
+
+	@Override
 	public void setAttribute(String name, Object value){
 		this.attributeMap.put(name, value);
 	}

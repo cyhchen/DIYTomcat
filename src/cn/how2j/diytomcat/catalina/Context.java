@@ -11,6 +11,7 @@ import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.date.TimeInterval;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.util.ReflectUtil;
+import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.LogFactory;
 import org.apache.log4j.Logger;
 import org.jsoup.Jsoup;
@@ -38,8 +39,8 @@ public class Context {
 	private Map<String, Map<String, String>> servletName_initPrams;
 	private Map<Class<?>, HttpServlet> servletPool;
 
-	private Map<String, String> url_filterClassName;
-	private Map<String, String> url_filterName;
+	private Map<String, List<String>> url_filterClassName;
+	private Map<String, List<String>> url_filterName;
 	private Map<String, String> filterName_className;
 	private Map<String, String> className_filterName;
 	private Map<String, Map<String, String>> filterName_initPrams;
@@ -127,6 +128,48 @@ public class Context {
 		return newHttpServlet;
 	}
 
+	public boolean match(String pattern, String uri){
+		if(StrUtil.equals(pattern, uri)){
+			return true;
+		}
+		if(StrUtil.equals(pattern,"/*")){
+			return true;
+		}
+		if(StrUtil.startWith(pattern, "/*.")){
+			String p1 = StrUtil.subAfter(pattern, '.', false);
+			String u1 = StrUtil.subAfter(uri, '.', false);
+			if(StrUtil.equals(p1, u1)){
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public List<Filter> getMatchedFilters(String uri){
+		List<Filter> res = new LinkedList<>();
+		Set<String> patterns = url_filterClassName.keySet();
+		Set<String> matchPatterns = new HashSet<String>();
+		for(String i : patterns){
+			LogFactory.get().error("first——url is : " + i);
+			if(match(i, uri)){
+				matchPatterns.add(i);
+			}
+		}
+		Set<String> matchFilterClassName = new HashSet<>();
+		for(String i : matchPatterns){
+			LogFactory.get().error("second——url is : " + i);
+			LogFactory.get().error("first——className is : " + this.url_filterClassName.get(i));
+			for(String j : this.url_filterClassName.get(i)){
+				matchFilterClassName.add(j);
+			}
+		}
+		for(String i : matchFilterClassName){
+			res.add(this.filterPool.get(i));
+		}
+		return res;
+
+	}
+
 	private void parseServletInitParams(Document d){
 		Elements es = d.select("servlet-class");
 		for(Element e : es){
@@ -186,7 +229,15 @@ public class Context {
 		for (Element mappingurlElement : mappingurlElements) {
 			String urlPattern = mappingurlElement.text();
 			String filterName = mappingurlElement.parent().select("filter-name").first().text();
-			url_filterName.put(urlPattern, filterName);
+			List<String> tmp = url_filterName.get(urlPattern);
+			if(tmp == null){
+				tmp = new ArrayList<>();
+				tmp.add(filterName);
+				url_filterName.put(urlPattern, tmp);
+			}else {
+				tmp.add(filterName);
+				url_filterName.put(urlPattern, tmp);
+			}
 		}
 
 		Elements filterNameElements = d.select("filter filter-name");
@@ -199,9 +250,16 @@ public class Context {
 
 		Set<String> urls = url_filterName.keySet();
 		for (String url : urls) {
-			String filterName = url_filterName.get(url);
-			String filterClassName = filterName_className.get(filterName);
-			url_filterClassName.put(url, filterClassName);
+			List<String> filterNames = url_filterName.get(url);
+			List<String> tmp = url_filterClassName.get(url);
+			if(tmp == null){
+				tmp = new ArrayList<>();
+			}
+			for(String i : filterNames) {
+				String filterClassName = filterName_className.get(i);
+				tmp.add(filterClassName);
+			}
+			url_filterClassName.put(url, tmp);
 		}
 	}
 

@@ -223,6 +223,11 @@ public class TestTomcat {
 		Assert.assertTrue(match);
 	}
 
+	@Test
+	public void testHello() {
+		String html1 = getContentString("/javaweb/hello");
+		Assert.assertEquals(html1,"Hello DIY Tomcat from HelloServlet@javaweb");
+	}
 
 
 }
