@@ -230,4 +230,12 @@ public class TestTomcat {
 	}
 
 
+	@Test
+	public void testJavaweb0Hello() {
+		String html = getContentString("/javaweb0/hello");
+		System.out.println(html);
+		containAssert(html,"Hello DIY Tomcat from HelloServlet@javaweb");
+	}
+
+
 }

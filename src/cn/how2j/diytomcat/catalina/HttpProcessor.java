@@ -37,6 +37,7 @@ public class HttpProcessor {
             if (null == uri)
                 return;
             Context context = request.getContext();
+            LogFactory.get().error("1.1 context is "+context.getPath() + " " + context.getDocBase() + " uri " + request.getUri());
             String servletClassName = context.getServletClassName(uri);
             HttpServlet workingServlet;
             if(servletClassName != null){

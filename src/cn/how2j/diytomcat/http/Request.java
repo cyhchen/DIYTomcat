@@ -217,6 +217,7 @@ public class Request extends BaseRequest {
 		}
 		
 		String path = StrUtil.subBetween(this.uri, "/","/");
+		LogFactory.get().error("a1. path is: " + path);
 		if(path == null){
 			path = "/";
 		}else{
@@ -226,7 +227,7 @@ public class Request extends BaseRequest {
 		if(context == null){
 			context = service.getEngine().getDefaultHost().getContext("/");
 		}
-		LogFactory.get().info("contextPath is " + this.context.getPath());
+		LogFactory.get().error("contextPath is " + this.context.getPath());
 	}
 
 	private void parseParam(){
